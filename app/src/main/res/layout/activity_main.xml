@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="60dp"
+    android:background="@color/colorPrimary"
+    android:theme="@style/LoginTheme"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/arsenal"
+            android:text="LOGIN"
+            android:textColor="@color/colorAccent"
+            android:textSize="44sp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="80dp"
+            android:src="@drawable/blood_icon"
+            android:background="@drawable/image_style"
+           />
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/user_id"
+        android:textColorHint="@color/colorAccent"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/colorAccent"
+        app:boxStrokeWidthFocused="2dp"
+        app:boxStrokeColor="@color/colorAccent"
+        app:helperTextTextColor="@color/colorAccent"
+        app:hintTextColor="@color/colorAccent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_nick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arsenal"
+            android:textColor="@color/colorAccent"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:textColorHint="@color/colorAccent"
+        app:hintTextColor="@color/colorAccent"
+        app:helperTextTextColor="@color/colorAccent"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/colorAccent"
+        app:boxStrokeColor="@color/colorAccent"
+        app:boxStrokeWidthFocused="2dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="@font/arsenal"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        >
+
+        <CheckBox
+            android:id="@+id/checkbox_remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorAccent"
+            android:textColor="@color/colorAccent"
+            android:text="@string/remember_me"
+            android:fontFamily="@font/arsenal"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/login"
+        android:fontFamily="@font/arsenal"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/button_forgot"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style_2"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="@font/arsenal"
+        android:text="@string/forgot_password"
+        android:textAllCaps="false"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"
+            android:textStyle="italic"
+            android:fontFamily="@font/arsenal"
+            android:text="@string/signup_question"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/arsenal"
+            android:text="@string/sign_up"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
