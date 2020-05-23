@@ -9,7 +9,7 @@ Thanks to the TinyDB class using SharedPreferences methods, you can easily skip 
 ### Using
 
 * Download **TinyDB class** and add your project
-  - [TinyDB Class](https://github.com/ucytv/Login-Design-3)
+  - [TinyDB Class](https://github.com/ucytv/TinyDB-Login-Event/blob/master/app/src/main/java/com/ucy/tinydbapp/TinyDB.java)
   
 * Add *Gson library* to build.gradle *(app)* 
   
